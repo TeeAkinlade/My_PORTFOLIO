@@ -11,27 +11,33 @@ const portfolios =[
     {
         id: 1,
         src: work,
+        href: 'https://r-store.vercel.app/'
     },
     {
         id: 2,
         src: work1,
+        href: 'https://reality-clone.vercel.app/'
 
     },
     {
         id: 3,
         src: work2,
+        href: 'https://sales-track-website.vercel.app/'
     },
     {
         id: 4,
         src: work3,
+        href: 'https://admin-dashboard-iota-kohl.vercel.app/'
     },
     {
         id: 5,
         src: work4,
+        href: 'https://realtor-clone-react-ruby.vercel.app/'
     },
     {
         id: 6,
         src: work5,
+        href: 'https://boldo-website.vercel.app/'
     },
 ]
 
@@ -45,9 +51,11 @@ const portfolios =[
                 <p className="py-6">Check out some of my work below</p>
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                {portfolios.map(({ id, src }) => (
-                    <div 
+                {portfolios.map(({ id, src, href }) => (
+                    <a 
+                        href={href}
                         key={id}
+                        target='_blank'
                         className="shadow-md shadow-gray-600 rounded-lg hover:scale-125 duration-300 mb-8">
                         <img 
                             src={src} 
@@ -55,10 +63,10 @@ const portfolios =[
                             className='rounded-md duration-200 w-full'
                         />
                         <div className="flex items-center justify-center">
-                            {/* <button className='w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105'>Demo</button> */}
+                            {/* <button className='w-1/2 px-6 py-2 m-1 duration-200 hover:scale-105 text-sm'>Demo</button> */}
                             {/* <button className='w-1/2 px-6 m-4 duration-200 hover:scale-105'>Code</button> */}
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>

@@ -5,6 +5,8 @@ import JAVASCRIPT from '../img/js.png'
 import GITHUB from '../img/github.png'
 import REACTIMG from '../img/react.png'
 import TAILWIND from '../img/tailwind.png'
+import ANT from '../img/ant.png'
+import CHAKRA from '../img/chakra_ui.png'
 
 const Experience = () => {
 
@@ -44,6 +46,18 @@ const Experience = () => {
       src: GITHUB,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 7,
+      src: ANT,
+      title: "Ant Design",
+      style: "shadow-red-400",
+    },
+    {
+      id: 8,
+      src: CHAKRA,
+      title: "Chakra UI",
+      style: "shadow-sky-400",
     },
   ];
 
