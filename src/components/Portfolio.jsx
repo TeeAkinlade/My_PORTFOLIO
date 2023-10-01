@@ -71,7 +71,11 @@ const portfolios =[
             </div>
         </div>
         <div className="flex place-items-center justify-center hover:translate-y-2 duration-500">
-            <button className='bg-gradient-to-r from-cyan-500 to-blue-700 px-4 py-1.5 mt-10 rounded-md shadow-lg'>See More</button>
+            <a  
+                href='https://github.com/TeeAkinlade'
+                target='_blank'
+                className='bg-gradient-to-r from-cyan-500 to-blue-700 px-4 py-1.5 mt-10 rounded-md shadow-lg'>See More</a> 
+
         </div>
     </div>
   )
