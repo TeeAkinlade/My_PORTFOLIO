@@ -5,39 +5,75 @@ import work2 from '../img/work2.png'
 import work3 from '../img/work3.png'
 import work4 from '../img/work4.png'
 import work5 from '../img/work5.png'
+import work6 from '../img/sumz.png'
+import work7 from '../img/movie.png'
+import work8 from '../img/pet.png'
 
 const Portfolio = () => {
 const portfolios =[ 
     {
         id: 1,
         src: work,
-        href: 'https://r-store.vercel.app/'
+        href: 'https://r-store.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/E-commerce-app',
+        about: 'A Clothing E-commerce store.'
     },
     {
         id: 2,
         src: work1,
-        href: 'https://reality-clone.vercel.app/'
+        href: 'https://reality-clone.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Reality_clone',
+        about:''
 
     },
     {
         id: 3,
         src: work2,
-        href: 'https://sales-track-website.vercel.app/'
+        href: 'https://sales-track-website.vercel.app/',
+        code: 'https://github.com/solyakin/sales_track_website',
+        about: ''
     },
     {
         id: 4,
         src: work3,
-        href: 'https://admin-dashboard-iota-kohl.vercel.app/'
+        href: 'https://admin-dashboard-iota-kohl.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Admin_dashboard',
+        about: ''
     },
     {
         id: 5,
         src: work4,
-        href: 'https://realtor-clone-react-ruby.vercel.app/'
+        href: 'https://realtor-clone-react-ruby.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
+        about: ''
     },
     {
         id: 6,
         src: work5,
-        href: 'https://boldo-website.vercel.app/'
+        href: 'https://boldo-website.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Boldo_website',
+        about: ''
+    },
+    {
+        id: 7,
+        src: work6,
+        href: 'https://sumz-api-summerizer.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/sumz_Api_summerizer',
+        about: ''
+    },
+    {
+        id: 7,
+        src: work7,
+        href: 'https://movie-box-amber.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Movie_box',
+        about: ''
+    },
+    {
+        id: 8,
+        src: work8,
+        href: '',
+        code: '',
+        about: ''
     },
 ]
 
@@ -50,23 +86,27 @@ const portfolios =[
                 <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 <p className="py-6">Check out some of my work below</p>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-                {portfolios.map(({ id, src, href }) => (
-                    <a 
-                        href={href}
-                        key={id}
-                        target='_blank'
-                        className="shadow-md shadow-gray-600 rounded-lg hover:scale-125 duration-300 mb-8">
-                        <img 
-                            src={src} 
-                            alt="" 
-                            className='rounded-md duration-200 w-full'
-                        />
-                        <div className="flex items-center justify-center">
-                            {/* <button className='w-1/2 px-6 py-2 m-1 duration-200 hover:scale-105 text-sm'>Demo</button> */}
-                            {/* <button className='w-1/2 px-6 m-4 duration-200 hover:scale-105'>Code</button> */}
+            <div className="grid sm:grid-cols-2 gap-8 px-12 sm:px-0">
+                {portfolios.map(({ id, src, href, code, about, }) => (
+                    <div className="p-8 rounded-lg shadow-sm shadow-white" key={id}>
+                        <div className="flex items-center justify-between">
+                            <a 
+                                href={href}
+                                target='_blank'
+                                className='w-1/2 px-1 pb-2 m-1 duration-200 hover:scale-105 text-sm'>
+                                    Demo
+                            </a>
+                            <a 
+                                href={code}
+                                target='_blank'
+                                className='w-1/2 px-1 pb-2 m-1 duration-200 text-end hover:scale-105 text-sm'>
+                                    Code
+                            </a>
+                            
                         </div>
-                    </a>
+                            <img src={src} alt="" className='rounded-md hover:scale-110 duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
+                            {/* <p className="mt-4 text-xs">{about}</p> */}
+                    </div>
                 ))}
             </div>
         </div>

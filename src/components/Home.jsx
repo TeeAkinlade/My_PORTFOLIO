@@ -15,9 +15,9 @@ const Home = () => {
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md">
                     I have 2 years of experience building and designing sofware.
-                    Currently, i love working with web application using technology like, React, Tailwind and other JavaScript libries.
+                    Currently, i love working with web application using technology like, Javascript, React, Next.js, tailwind css and other programming languages
                 </p>
-                <div className="">
+                <div className=" mt-4 sm:mt-8">
                     <Link to='portfolio' smooth duration={500}
                         className='group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-700 cursor-pointer mb-10 md:mb-0'
                     >

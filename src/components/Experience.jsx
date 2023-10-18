@@ -2,9 +2,10 @@ import React from 'react'
 import HTML from '../img/html.png'
 import CSS from '../img/css.png'
 import JAVASCRIPT from '../img/js.png'
-import GITHUB from '../img/github.png'
+import GITHUB from '../img/github.svg'
 import REACTIMG from '../img/react.png'
 import TAILWIND from '../img/tailwind.png'
+import NEXTJS from '../img/next.svg'
 import ANT from '../img/ant.png'
 import CHAKRA from '../img/chakra_ui.png'
 
@@ -43,18 +44,24 @@ const Experience = () => {
     },
     {
       id: 6,
-      src: GITHUB,
-      title: "GitHub",
-      style: "shadow-gray-400",
+      src: NEXTJS,
+      title: "Next js",
+      style: "shadow-white",
     },
     {
       id: 7,
+      src: GITHUB,
+      title: "GitHub",
+      style: "shadow-white",
+    },
+    {
+      id: 8,
       src: ANT,
       title: "Ant Design",
       style: "shadow-red-400",
     },
     {
-      id: 8,
+      id: 9,
       src: CHAKRA,
       title: "Chakra UI",
       style: "shadow-sky-400",
