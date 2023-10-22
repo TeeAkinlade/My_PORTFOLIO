@@ -11,13 +11,13 @@ import work8 from '../img/pet.png'
 
 const Portfolio = () => {
 const portfolios =[ 
-    {
-        id: 1,
-        src: work,
-        href: 'https://r-store.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/E-commerce-app',
-        about: 'A Clothing E-commerce store.'
-    },
+    //{
+       // id: 1,
+       // src: work,
+       // href: 'https://r-store.vercel.app/',
+       // code: 'https://github.com/TeeAkinlade/E-commerce-app',
+       // about: 'A Clothing E-commerce store.'
+  //  },
     {
         id: 2,
         src: work1,
@@ -33,13 +33,13 @@ const portfolios =[
         code: 'https://github.com/solyakin/sales_track_website',
         about: ''
     },
-    {
-        id: 4,
-        src: work3,
-        href: 'https://admin-dashboard-iota-kohl.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/Admin_dashboard',
-        about: ''
-    },
+   // {
+       // id: 4,
+       // src: work3,
+       // href: 'https://admin-dashboard-iota-kohl.vercel.app/',
+       // code: 'https://github.com/TeeAkinlade/Admin_dashboard',
+       // about: ''
+   // },
     {
         id: 5,
         src: work4,
