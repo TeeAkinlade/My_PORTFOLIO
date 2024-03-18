@@ -3,11 +3,12 @@ import HTML from '../img/html.png'
 import CSS from '../img/css.png'
 import JAVASCRIPT from '../img/js.png'
 import GITHUB from '../img/github.svg'
-import REACTIMG from '../img/react.png'
+import REACT_IMG from '../img/react.png'
 import TAILWIND from '../img/tailwind.png'
 import NEXTJS from '../img/next.svg'
 import ANT from '../img/ant.png'
 import CHAKRA from '../img/chakra_ui.png'
+import TYPESCRIPT from '../img/typescript.svg'
 
 const Experience = () => {
 
@@ -32,7 +33,7 @@ const Experience = () => {
     },
     {
       id: 4,
-      src: REACTIMG,
+      src: REACT_IMG,
       title: "React",
       style: "shadow-blue-600",
     },
@@ -50,18 +51,24 @@ const Experience = () => {
     },
     {
       id: 7,
+      src: TYPESCRIPT,
+      title: "Typescript",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 8,
       src: GITHUB,
       title: "GitHub",
       style: "shadow-white",
     },
     {
-      id: 8,
+      id: 9,
       src: ANT,
       title: "Ant Design",
       style: "shadow-red-400",
     },
     {
-      id: 9,
+      id: 10,
       src: CHAKRA,
       title: "Chakra UI",
       style: "shadow-sky-400",

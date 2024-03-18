@@ -14,8 +14,10 @@ const Home = () => {
                     I'm a <span className='text-cyan-300'>Frontend</span> Developer
                 </h2>
                 <p className="text-gray-500 py-4 max-w-md">
-                    I have 2 years of experience building and designing sofware.
-                    Currently, i love working with web application using technology like, Javascript, React, Next.js, tailwind css and other programming languages
+                    Dedicated Front-End Developer with proven years of experience translating UI/UX design 
+                    concepts into high-quality code. Proficient in HTML, CSS, Tailwind CSS, JavaScript and Typscript with a 
+                    deep understanding of front-end frameworks like React and Next.js. Proven track record of 
+                    delivering responsive visually appealing and intuitive user interfaces for diverse web applications.
                 </p>
                 <div className=" mt-4 sm:mt-8">
                     <Link to='portfolio' smooth duration={500}

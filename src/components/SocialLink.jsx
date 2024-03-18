@@ -40,7 +40,7 @@ const SocialLink = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Akinlade  cv.docx.pdf',
+            href: '/Taiye Akinlade.pdf',
             style: 'rounded-br-md',
             download: true,
         },

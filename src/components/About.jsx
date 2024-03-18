@@ -9,7 +9,10 @@ const About = () => {
                 <div className="pb-8">
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
                     <p className="text-xl mt-20">
-                    Self motivated graduate with Higher National Diploma certificate in Computer Science and critical experience in Frontend programming languages with ability to translate business requirements into technical solutions. I am looking to start a career as an entry-level employee with a reputed firm driven by technology.
+                      Dedicated Front-End Developer with proven years of experience translating UI/UX design 
+                      concepts into high-quality code. Proficient in HTML, CSS, Tailwind CSS and JavaScript, with a 
+                      deep understanding of front-end frameworks like React and Next.js. Proven track record of 
+                      delivering visually appealing and intuitive user interfaces for diverse web applications.
                     </p>
                     <br />
                     <p className='text-xl'></p>
