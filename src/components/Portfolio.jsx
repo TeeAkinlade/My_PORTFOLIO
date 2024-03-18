@@ -12,10 +12,10 @@ const Portfolio = () => {
 const portfolios =[ 
     {
         id: 1,
-        src: work4,
-        href: 'https://realtor-clone-react-ruby.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
-        about: ''
+        src: work,
+        href: 'https://r-store.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/E-commerce-app',
+        about: 'A Clothing E-commerce store.'
     },
     {
         id: 2,
@@ -25,10 +25,10 @@ const portfolios =[
         about: ''
     },
     {
-        id: 3,
+        id: 4,
         src: work3,
-        href: 'https://seemless-pos-assessment.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/SeemlessPos_Assessment',
+        href: 'https://admin-dashboard-iota-kohl.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Admin_dashboard',
         about: ''
     },
     {

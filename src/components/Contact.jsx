@@ -63,7 +63,7 @@ const Contact = () => {
                       className="text-gray-500"
                       size={25} 
                   />
-                  <p className=" ml-2">+2348139062746</p>
+                  <p className=" ml-2">+2348149062746</p>
               </div>
               <div className="flex items-center justify-start space-x-5 mt-6">
                 <a 
