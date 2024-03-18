@@ -7,15 +7,16 @@ import work4 from '../img/work4.png'
 import work5 from '../img/work5.png'
 import work6 from '../img/sumz.png'
 import work7 from '../img/movie.png'
+import work8 from '../img/pet.png'
 
 const Portfolio = () => {
 const portfolios =[ 
     {
         id: 1,
-        src: work,
-        href: 'https://r-store.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/E-commerce-app',
-        about: 'A Clothing E-commerce store.'
+        src: work4,
+        href: 'https://realtor-clone-react-ruby.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
+        about: ''
     },
     {
         id: 2,
@@ -25,10 +26,10 @@ const portfolios =[
         about: ''
     },
     {
-        id: 4,
+        id: 3,
         src: work3,
-        href: 'https://admin-dashboard-iota-kohl.vercel.app/',
-        code: 'https://github.com/TeeAkinlade/Admin_dashboard',
+        href: 'https://seemless-pos-assessment.vercel.app/',
+        code: 'https://github.com/TeeAkinlade/SeemlessPos_Assessment',
         about: ''
     },
     {
@@ -45,7 +46,7 @@ const portfolios =[
         code: 'https://github.com/TeeAkinlade/E-commerce-app',
         about: 'A Clothing E-commerce store.'
     },
-    {
+     {
         id: 9,
         src: work7,
         href: 'https://movie-box-amber.vercel.app/',
