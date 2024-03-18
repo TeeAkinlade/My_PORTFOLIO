@@ -1,4 +1,3 @@
-import React from 'react'
 import work from '../img/work.png'
 import work1 from '../img/work1.png'
 import work2 from '../img/work2.png'
@@ -7,10 +6,9 @@ import work4 from '../img/work4.png'
 import work5 from '../img/work5.png'
 import work6 from '../img/sumz.png'
 import work7 from '../img/movie.png'
-import work8 from '../img/pet.png'
 
 const Portfolio = () => {
-const portfolios =[ 
+const portfolios = [ 
     {
         id: 1,
         src: work4,

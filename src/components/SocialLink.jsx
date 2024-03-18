@@ -1,10 +1,9 @@
-import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { GrMail } from 'react-icons/gr'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 const SocialLink = () => {
-    const links =[
+    const links = [
         {
             id: 1, 
             child: (
