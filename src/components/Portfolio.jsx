@@ -6,6 +6,7 @@ import work4 from '../img/work4.png'
 import work5 from '../img/work5.png'
 import work6 from '../img/sumz.png'
 import work7 from '../img/movie.png'
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
 const portfolios = [ 
@@ -14,14 +15,16 @@ const portfolios = [
         src: work4,
         href: 'https://realtor-clone-react-ruby.vercel.app/',
         code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
-        about: ''
+        title: 'Realtor web Application',
+        about: 'A responsive web application that allows user to create an account and upload houses for sales or lease. This web Application was created with React, Firebase and moment timezone',
     },
     {
         id: 2,
         src: work2,
         href: 'https://sales-track-website.vercel.app/',
         code: 'https://github.com/solyakin/sales_track_website',
-        about: ''
+        title: 'Sale Track',
+        about: 'A responsive web application that allows user to create an account and upload goods.',
     },
     {
         id: 3,
@@ -78,8 +81,23 @@ const portfolios = [
                 <p className="py-6">Check out some of my work below</p>
             </div>
             <div className="grid sm:grid-cols-2 gap-8 px-12 sm:px-0">
-                {portfolios.map(({ id, src, href, code, about, }) => (
-                    <div className="p-8 rounded-lg shadow-sm shadow-white" key={id}>
+                {portfolios.map(({ id, src, href, code, title, about, }) => (
+                    <motion.div
+                        initial={{
+                        opacity: 0,
+                        // if odd index card,slide from right instead of left
+                        x: id % 2 === 0 ? 50 : -50
+                        }}
+                        whileInView={{
+                        opacity: 1,
+                        x: 0, // Slide in to its original position
+                        transition: {
+                            duration: 2 // Animation duration
+                        }
+                        }}
+                        viewport={{ once: false }}
+                        className="p-8 rounded-lg shadow-sm shadow-white" key={id}
+                    >
                         <div className="flex items-center justify-between">
                             <a 
                                 href={href}
@@ -95,9 +113,19 @@ const portfolios = [
                             </a>
                             
                         </div>
-                            <img src={src} alt="" className='rounded-md hover:scale-110 duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
-                            {/* <p className="mt-4 text-xs">{about}</p> */}
-                    </div>
+                            <div className="relative group">
+                                <img src={src} alt="" className='rounded-md duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
+                                <div className="hidden group-hover:block">
+                                    <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out">
+                                        <div className="p-7 text-center mt-4 z-30">
+                                            <h3 className='font-semibold my-3'>{title}</h3>
+                                            <p className="text-[14px] text-white">{about}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

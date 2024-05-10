@@ -30,7 +30,7 @@ const NavBar = () => {
     ]
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 md:px-20 text-white bg-black
-    fixed'>
+    fixed z-50'>
         <div>
             <h1 className='text-5xl font-signature ml-2 hover:text-cyan-500'>Taiye</h1>
         </div>
