@@ -96,7 +96,7 @@ const portfolios = [
                         }
                         }}
                         viewport={{ once: false }}
-                        className="p-8 rounded-lg shadow-sm shadow-white" key={id}
+                        className="p-4 md:p-8 rounded-lg shadow-sm shadow-white" key={id}
                     >
                         <div className="flex items-center justify-between">
                             <a 
@@ -117,9 +117,9 @@ const portfolios = [
                                 <img src={src} alt="" className='rounded-md duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
                                 <div className="hidden group-hover:block">
                                     <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out">
-                                        <div className="p-7 text-center mt-4 z-30">
-                                            <h3 className='font-semibold my-3'>{title}</h3>
-                                            <p className="text-[14px] text-white">{about}</p>
+                                        <div className="p-1 lg:p-7 text-center lg:mt-4 z-30">
+                                            <h3 className='font-semibold my-2'>{title}</h3>
+                                            <p className="text-xs md:text-[14px] text-white">{about}</p>
                                         </div>
                                     </div>
                                 </div>
