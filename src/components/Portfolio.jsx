@@ -115,14 +115,14 @@ const portfolios = [
                         </div>
                             <div className="relative group">
                                 <img src={src} alt="" className='rounded-md duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
-                                <div className="hidden group-hover:block">
+                                {/* <div className="hidden group-hover:block">
                                     <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out">
                                         <div className="p-1 lg:p-7 text-center lg:mt-4 z-30">
                                             <h3 className='font-semibold my-2'>{title}</h3>
                                             <p className="text-xs md:text-[14px] text-white">{about}</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
 
                             </div>
                     </motion.div>
