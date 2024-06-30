@@ -13,7 +13,7 @@ const Home = () => {
                 <h2 className='text-6xl sm:text-7xl font-bold text-white'>
                     I'm a <span className='text-cyan-300'>Frontend</span> Developer
                 </h2>
-                <p className="text-gray-500 py-4 max-w-md">
+                <p className="text-gray-400 py-4 max-w-md">
                     Dedicated Front-End Developer with proven years of experience translating UI/UX design 
                     concepts into high-quality code. Proficient in HTML, CSS, Tailwind CSS, JavaScript and Typscript with a 
                     deep understanding of front-end frameworks like React and Next.js. Proven track record of 
