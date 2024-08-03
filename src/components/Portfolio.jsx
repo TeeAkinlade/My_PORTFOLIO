@@ -16,7 +16,8 @@ const portfolios = [
         href: 'https://realtor-clone-react-ruby.vercel.app/',
         code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
         title: 'Realtor web Application',
-        about: 'A responsive web application that allows user to create an account and upload houses for sales or lease. This web Application was created with React, Firebase and moment timezone',
+        about: 'Spearheaded the development of a comprehensive Real Estate Management System designed to streamline property listings. The project focused on creating a user-friendly platform that enhances the efficiency and effectiveness of real estate operations',
+        technology: "React, Tailwind, Firebase, moment-timezone",
     },
     {
         id: 2,
@@ -24,42 +25,50 @@ const portfolios = [
         href: 'https://sales-track-website.vercel.app/',
         code: 'https://github.com/solyakin/sales_track_website',
         title: 'Sale Track',
-        about: 'A responsive web application that allows user to create an account and upload goods.',
+        about: 'E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships',
+        technology: "React, Redux, Chakra UI, Formik"
+
     },
     {
         id: 3,
         src: work3,
         href: 'https://seemless-pos-assessment.vercel.app/',
         code: 'https://github.com/TeeAkinlade/SeemlessPos_Assessment',
-        about: ''
+        about: 'A Clothing E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships.',
+        technology: " React, Redux, Tailwind, Rapid API"
     },
     {
         id: 4,
         src: work6,
         href: 'https://sumz-api-summerizer.vercel.app/',
         code: 'https://github.com/TeeAkinlade/sumz_Api_summerizer',
-        about: ''
+        title: 'Sumz API summerizer',
+        about: 'The project aimed to enhance content consumption efficiency for users by providing quick and accurate summaries of extensive textual data.',
+        technology: " React, Redux, Tailwind, Rapid API",
     },
     {
         id: 6,
         src: work,
         href: 'https://r-store.vercel.app/',
         code: 'https://github.com/TeeAkinlade/E-commerce-app',
-        about: 'A Clothing E-commerce store.'
+        about: 'A Clothing E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships.',
+        technology: "HTML, CSS, JavaScript, Api"
     },
      {
         id: 9,
         src: work7,
         href: 'https://movie-box-amber.vercel.app/',
         code: 'https://github.com/TeeAkinlade/Movie_box',
-        about: ''
+        about: 'A movie website that show the latest movies ans details about the movie',
+        technology: "NextJs, Tailwind, Dummy Api"
     },
     {
         id: 7,
         src: work1,
         href: 'https://reality-clone.vercel.app/',
         code: 'https://github.com/TeeAkinlade/Reality_clone',
-        about:''
+        about:'A responsive UI interafce that shows the interior of properties for sales',
+        technology: "React, Tailwind, react-modal-video"
 
     },
     {
@@ -67,21 +76,23 @@ const portfolios = [
         src: work5,
         href: 'https://boldo-website.vercel.app/',
         code: 'https://github.com/TeeAkinlade/Boldo_website',
-        about: ''
+        about: 'A Responsive Boldo clone website with amazing UI',
+        technology: "React,= Tailwind"
     },
 ]
 
   return (
       <div name="portfolio" 
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full py-16"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full py-16 px-3 md:px-0"
       >
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className='pb-8'>
                 <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
                 <p className="py-6">Check out some of my work below</p>
             </div>
-            <div className="grid sm:grid-cols-2 gap-8 px-12 sm:px-0">
-                {portfolios.map(({ id, src, href, code, title, about, }) => (
+            <div className="grid sm:grid-cols-2 gap-8 px-0 md:px-12 sm:px-0">
+                {portfolios.map(({ id, src, href, code, title, about, technology
+                }) => (
                     <motion.div
                         initial={{
                         opacity: 0,
@@ -96,33 +107,34 @@ const portfolios = [
                         }
                         }}
                         viewport={{ once: false }}
-                        className="p-4 md:p-8 rounded-lg shadow-sm shadow-white" key={id}
+                        className="p-4 rounded-lg shadow-sm shadow-white" key={id}
                     >
                         <div className="flex items-center justify-between">
                             <a 
                                 href={href}
                                 target='_blank'
-                                className='w-1/2 px-1 pb-2 m-1 duration-200 hover:scale-105 text-sm'>
+                                className='w-1/2 pb-2 hover:text-cyan-100 text-sm'>
                                     Demo
                             </a>
                             <a 
                                 href={code}
                                 target='_blank'
-                                className='w-1/2 px-1 pb-2 m-1 duration-200 text-end hover:scale-105 text-sm'>
+                                className='w-1/2 pb-2 hover:text-cyan-100 text-end text-sm'>
                                     Code
                             </a>
                             
                         </div>
                             <div className="relative group">
                                 <img src={src} alt="" className='rounded-md duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
-                                {/* <div className="hidden group-hover:block">
-                                    <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out">
-                                        <div className="p-1 lg:p-7 text-center lg:mt-4 z-30">
+                                <div className="hidden group-hover:block">
+                                    <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out rounded-md">
+                                        <div className="p-3 lg:p-7 text-left lg:mt-4 z-30">
                                             <h3 className='font-semibold my-2'>{title}</h3>
-                                            <p className="text-xs md:text-[14px] text-white">{about}</p>
+                                            <p className="text-xs md:text-[10px] text-white">{about}</p>
+                                            <p className="text-xs md:text-[10px] pt-2 text-white"><strong>Technology: </strong>{technology}</p>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
 
                             </div>
                     </motion.div>

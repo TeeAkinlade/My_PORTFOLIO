@@ -19,13 +19,13 @@ const Contact = () => {
           </p>
           <p className="py-6">Get in touch with me</p>
         </div>
-         <div class="w-full flex md:flex-row flex-col flex-wrap items-center justify-center gap-10 lg:gap-[5rem] lg:m-[5rem] px-4">
-            <div class="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-[#ec0909a2] shadow-[#f706063d] shadow-xl">
+         <div className="w-full flex md:flex-row flex-col flex-wrap items-center justify-center gap-10 lg:gap-[5rem] lg:m-[4rem] px-4">
+            <div classaNAme="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
                 <GrMail size={38} className="mb-2"/>
                 <h3 className="font-bold text-xl">Email</h3>
                 <p className="py-3">taiye.akinlade1@gmail.com</p>
                 <a
-                    class="button-85"
+                    className="button-85"
                     role="button"
                     target="_blank"
                     href="mailto:taiye.akinlade1@gmail.com"
@@ -33,12 +33,12 @@ const Contact = () => {
                     Send me an email
                 </a>
             </div>
-            <div class="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-[#11ec09a2] shadow-[#22f7063d] shadow-xl">
+            <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
             <FaWhatsapp size={38} className="mb-2" />
                 <h3 className="font-bold text-xl">WhatsApp</h3>
                 <p className="py-3">+2348149062746</p>
                 <a
-                    class="button-85"
+                    className="button-85"
                     role="button"
                     target="_blank"
                     href="https://wa.me/+2348149062746"
@@ -46,12 +46,12 @@ const Contact = () => {
                     WhatsApp Me.
                 </a>
             </div>
-            <div class="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-[#0945eca2] shadow-[#172ce93d] shadow-xl">
+            <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
             <FaLinkedin size={38} className="mb-2" />
                 <h3 className="font-bold text-xl">Linkedin</h3>
                 <p className="py-3">Taiye Akinlade</p>
                 <a
-                    class="button-85"
+                    className="button-85"
                     role="button"
                     target="_blank"
                     href="https://www.linkedin.com/in/akinlade-taiye-733a8120a/"
