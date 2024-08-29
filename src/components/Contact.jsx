@@ -33,6 +33,19 @@ const Contact = () => {
                     Send me an email
                 </a>
             </div>
+             <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
+            <FaWhatsapp size={38} className="mb-2" />
+                <h3 className="font-bold text-xl">WhatsApp</h3>
+                <p className="py-3">+2348149062746</p>
+                <a
+                    className="button-85"
+                    role="button"
+                    target="_blank"
+                    href="https://wa.me/+2348149062746"
+                >
+                    WhatsApp Me.
+                </a>
+            </div>
             <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
             <FaWhatsapp size={38} className="mb-2" />
                 <h3 className="font-bold text-xl">WhatsApp</h3>
