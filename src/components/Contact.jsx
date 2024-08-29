@@ -20,7 +20,7 @@ const Contact = () => {
           <p className="py-6">Get in touch with me</p>
         </div>
          <div className="w-full flex md:flex-row flex-col flex-wrap items-center justify-center gap-10 lg:gap-[5rem] lg:m-[4rem] px-4">
-            <div classaNAme="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
+           {/* <div classaNAme="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
                 <GrMail size={38} className="mb-2"/>
                 <h3 className="font-bold text-xl">Email</h3>
                 <p className="py-3">taiye.akinlade1@gmail.com</p>
@@ -32,18 +32,18 @@ const Contact = () => {
                 >
                     Send me an email
                 </a>
-            </div>
-             <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
-            <FaWhatsapp size={38} className="mb-2" />
-                <h3 className="font-bold text-xl">WhatsApp</h3>
-                <p className="py-3">+2348149062746</p>
-                <a
+            </div> */}
+            <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
+                <GrMail size={38} className="mb-2" />
+                   <h3 className="font-bold text-xl">Email</h3>
+                   <p className="py-3">taiye.akinlade1@gmail.com</p>
+                   <a
                     className="button-85"
                     role="button"
                     target="_blank"
-                    href="https://wa.me/+2348149062746"
-                >
-                    WhatsApp Me.
+                    href="mailto:taiye.akinlade1@gmail.com"
+                   >
+                    Send me an email
                 </a>
             </div>
             <div className="flex flex-col w-full md:w-[40%] rounded-[2rem] p-8 border border-cyan-500">
