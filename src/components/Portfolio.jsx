@@ -19,7 +19,8 @@ const portfolios = [
         about: 'Spearheaded the development of a comprehensive Real Estate Management System designed to streamline property listings. The project focused on creating a user-friendly platform that enhances the efficiency and effectiveness of real estate operations',
         technology: "React, Tailwind, Firebase, moment-timezone",
     },
-    {
+    
+    /*{
         id: 2,
         src: work2,
         href: 'https://sales-track-website.vercel.app/',
@@ -28,7 +29,7 @@ const portfolios = [
         about: 'E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships',
         technology: "React, Redux, Chakra UI, Formik"
 
-    },
+    },*/
     {
         id: 3,
         src: work3,
