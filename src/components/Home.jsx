@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 import heroImage from '../img/image1.jpg'
-import { Link }from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
