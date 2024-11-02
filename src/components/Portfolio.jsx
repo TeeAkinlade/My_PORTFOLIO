@@ -83,7 +83,7 @@ const Portfolio = () => {
             code: 'https://github.com/TeeAkinlade/Boldo_website',
             title: 'Blodo clone',
             about: 'A Responsive Boldo clone website with amazing UI',
-            technology: "React,= Tailwind"
+            technology: "React, Tailwind"
         },
     ]
   return (

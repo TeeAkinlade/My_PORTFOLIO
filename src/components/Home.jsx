@@ -8,7 +8,7 @@ const Home = () => {
     <div name="home"
         className='h-full lg:h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 text-white md:px-16 lg:px-28 py-20 md:py-0'
     >
-        <div className="mx-auto flex flex-col lg:items-center justify-between h-full lg:px-[30px] px-4 lg:flex-row pt-20">
+        <div className="mx-auto flex flex-col lg:items-center justify-between h-full lg:px-[30px] px-8 lg:flex-row pt-20">
             <div className="flex flex-col h-full">
                 <h2 className='text-6xl sm:text-7xl md:mt-20 lg:mt-0 font-bold text-white'>
                     I'm a <span className='text-cyan-300'>Frontend</span> <br /> Developer
