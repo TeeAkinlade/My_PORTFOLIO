@@ -11,7 +11,7 @@ const About = () => {
                     <p className=" text-lg md:text-xl font-medium mt-20 px-6 md:px-12 leading-10 lg:px-16">
                       My name is Taiye Akinlade, a passionate Frontend Developer with a keen eye for creating intuitive, visually appealing, and user-friendly digital experiences. I specialize in translating design concepts into responsive, efficient, and scalable code, ensuring that each project not only looks great but performs seamlessly. With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I continuously strive to stay at the forefront of web development trends and best practices. I believe in the power of clean, accessible code and a user-first approach to build meaningful digital solutions that make a difference.
 
-                      P>Let’s bring ideas to life, pixel by pixel!
+                      <p className='pt-3'>Let’s bring ideas to life, pixel by pixel!</p>
                     </p>
                     <br />
                     <p className='text-xl'></p>
