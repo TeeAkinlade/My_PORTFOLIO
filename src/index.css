@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x: hidden;
+}
+
 @layer base{
   html {
     font-family: 'Raleway', sans-serif;
@@ -79,5 +83,28 @@
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+/* width */
+::-webkit-scrollbar{
+  width: 5px;
+  height: 0px;
+}
+
+/* track */
+::-webkit-scrollbar-track{
+  background: #F1F1F1;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb{
+  background: #0E7490;
+  border-radius: 5px;
+}
+
+/* Handle hover */
+
+::-webkit-scrollbar-thumb:hover{
+  background:#2f3233;
 }
 

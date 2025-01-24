@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-full bg-white text-white pt-10 md:py-20 bg-gradient-to-b from-black to-gray-800 lg:px-28 md:px-16"
+      className="w-full h-full text-secondaryBg pt-10 md:py-20 bg-primaryBg lg:px-28 md:px-16"
     >
       <div className="flex flex-col p-6 mx-auto h-full pb-8">
         <div className="pb-8">
@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
           <p className="py-6 px-2 font-semibold">Get in touch with me</p>
          <div className="w-full flex md:flex-row flex-col flex-wrap justify-center gap-10 lg:gap-[2rem] pt-8 md:pt-16 px-8">
-            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-cyan-500">
+            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-secondaryBg">
                 <GrMail size={38} className="mb-2" />
                    <h3 className="font-bold text-xl">Email</h3>
                    <p className="py-2 text-sm">taiye.akinlade1@gmail.com</p>
@@ -29,7 +29,7 @@ const Contact = () => {
                     Send an email
                 </a>
             </div>
-            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-cyan-500">
+            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-secondaryBg">
             <FaWhatsapp size={38} className="mb-2" />
                 <h3 className="font-bold text-xl">WhatsApp</h3>
                 <p className="py-2 text-sm">+2348149062746</p>
@@ -42,7 +42,7 @@ const Contact = () => {
                     WhatsApp Me.
                 </a>
             </div>
-            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-cyan-500">
+            <div className="flex flex-col w-full md:w-[40%] lg:w-[30%] rounded-[2rem] p-8 shadow-lg border border-secondaryBg">
             <FaLinkedin size={38} className="mb-2" />
                 <h3 className="font-bold text-xl">Linkedin</h3>
                 <p className="py-2 text-sm">Taiye Akinlade</p>

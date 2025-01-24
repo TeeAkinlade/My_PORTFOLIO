@@ -79,7 +79,7 @@ const Experience = () => {
   return (
     <div
       name="experience"
-      className='bg-[#e3e33] w-full h-full py-14 lg:px-28 md:px-16 md:py-20'
+      className='bg-secondaryBg w-full h-full py-14 lg:px-28 md:px-16 md:py-20'
     >
       <div className='mx-auto p-6 flex flex-col justify-center w-full h-full text-black'>
         <div className="">

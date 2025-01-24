@@ -88,12 +88,12 @@ const Portfolio = () => {
     ]
   return (
       <div name="portfolio" 
-      className="bg-gradient-to-b from-black to-gray-800 w-full text-white h-full py-16 px-3 md:px-16 lg:px-28"
+      className="bg-primaryBg w-full text-secondaryBg h-full py-16 px-3 md:px-16 lg:px-28"
       >
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className='pb-8'>
-                <p className="text-4xl font-bold inline border-b-4 border-gray-500">Portfolio</p>
-                <p className="py-6">Check out some of my work below</p>
+                <p className="text-4xl font-bold inline border-b-4 border-[#7fa7b3]">Portfolio</p>
+                <p className="py-6 font-medium">Check out some of my work below</p>
             </div>
             <div className="flex justify-center items-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-16 md:px-8 w-[330px] sm:w-[600px] md:w-full">
@@ -113,19 +113,19 @@ const Portfolio = () => {
                             }
                             }}
                             viewport={{ once: false }}
-                            className="p-4 rounded-lg shadow-sm shadow-white" key={id}
+                            className="p-4 rounded-lg shadow-md shadow-secondaryBg" key={id}
                         >
                             <div className="flex items-center justify-between">
                                 <a 
                                     href={href}
                                     target='_blank'
-                                    className='w-1/2 pb-2 hover:text-cyan-100 text-sm'>
+                                    className='w-1/2 pb-2 hover:text-cyan-700 text-sm'>
                                         Demo
                                 </a>
                                 <a 
                                     href={code}
                                     target='_blank'
-                                    className='w-1/2 pb-2 hover:text-cyan-100 text-end text-sm'>
+                                    className='w-1/2 pb-2 hover:text-cyan-700 text-end text-sm'>
                                         Code
                                 </a>
                                 
@@ -151,7 +151,7 @@ const Portfolio = () => {
             <a  
                 href='https://github.com/TeeAkinlade'
                 target='_blank'
-                className='bg-gradient-to-r from-cyan-500 to-blue-700 px-4 py-1.5 mt-10 rounded-md shadow-lg'>See More</a> 
+                className='bg-gradient-to-r from-cyan-700 to-cyan-500 text-white px-4 py-1.5 mt-10 rounded-md shadow-lg'>See More</a> 
 
         </div>
     </div>
