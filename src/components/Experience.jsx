@@ -3,7 +3,7 @@ import HTML from '../img/html.png'
 import CSS from '../img/css.png'
 import JAVASCRIPT from '../img/js.png'
 import GITHUB from '../img/github.png'
-import SASS from '../img/SASS.png'
+import SASS from '../img/sass.png'
 import REACT_IMG from '../img/react.png'
 import TAILWIND from '../img/tailwind.png'
 import NEXTJS from '../img/next.svg'
@@ -77,7 +77,7 @@ const Experience = () => {
     {
       id: 10,
       src: SASS,
-      title: "SASS",
+      title: "Saas",
       style: "shadow-sky-400",
     },
   ];
