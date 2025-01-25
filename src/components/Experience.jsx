@@ -2,7 +2,8 @@ import React from 'react'
 import HTML from '../img/html.png'
 import CSS from '../img/css.png'
 import JAVASCRIPT from '../img/js.png'
-import GITHUB from '../img/github.svg'
+import GITHUB from '../img/github.png'
+import SASS from '../img/SASS.png'
 import REACT_IMG from '../img/react.png'
 import TAILWIND from '../img/tailwind.png'
 import NEXTJS from '../img/next.svg'
@@ -73,27 +74,33 @@ const Experience = () => {
       title: "Chakra UI",
       style: "shadow-sky-400",
     },
+    {
+      id: 10,
+      src: SASS,
+      title: "SASS",
+      style: "shadow-sky-400",
+    },
   ];
 
 
   return (
     <div
       name="experience"
-      className='bg-secondaryBg w-full h-full py-14 lg:px-28 md:px-16 md:py-20'
+      className='bg-secondary w-full h-full py-14 lg:px-28 md:px-16 md:py-20'
     >
-      <div className='mx-auto p-6 flex flex-col justify-center w-full h-full text-black'>
+      <div className='mx-auto p-6 flex flex-col justify-center w-full h-full text-primary'>
         <div className="">
-          <p className="text-4xl font-bold border-b-4 border-black inline">Experience</p>
+          <p className="text-4xl font-bold border-b-4 border-primary inline">Experience</p>
           <p className="py-6 font-medium">Technology i have worked with</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center p-8 lg:px-20">{techs.map(({ id, src, title, style }) => (
           <div 
             key={id}
-            className={`shadow-md shadow-slate-700 hover:scale-105 duration-500 py-3 bg-slate-500 rounded-lg`}>
+            className={`shadow-md shadow-slate-700 hover:scale-105 duration-500 py-3 bg-primary rounded-lg`}>
             <img src={src} alt="" 
               className='w-20 mx-auto'
             />
-            <p className="mt-4 text-white">{title}</p>
+            <p className="mt-4 text-secondary">{title}</p>
           </div>
 
         ))}

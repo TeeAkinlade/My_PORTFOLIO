@@ -22,8 +22,8 @@ body{
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
+  color: #fbf0df;
+  background: #22254b;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -37,15 +37,15 @@ body{
   content: "";
   background: linear-gradient(
     45deg,
-    #ff0000,
-    #ff7300,
+    #00a2ff,
+    #ca9503ce,
     #fffb00,
-    #48ff00,
-    #00ffd5,
+    #22254b,
     #002bff,
+    #fbf0df,
     #7a00ff,
-    #ff00c8,
-    #ff0000
+    #0E7490,
+    #ffee00
   );
   border-radius: 10px;
   position: absolute;
@@ -79,7 +79,7 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #222;
+  background: #22254b;
   left: 0;
   top: 0;
   border-radius: 10px;

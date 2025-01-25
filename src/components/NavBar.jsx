@@ -29,14 +29,14 @@ const NavBar = () => {
         },
     ]
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 md:px-16 lg:px-28 text-black bg-primaryBg shadow-sm
+    <div className='flex justify-between items-center w-full h-20 px-4 md:px-16 lg:px-28 text-black bg-primary shadow-sm
     fixed z-50'>
         <div>
             <h1 className='text-5xl font-signature ml-2 text-cyan-700'>Taiye</h1>
         </div>
         <ul className="hidden md:flex">
             {links.map(({ id, link}) => (
-                <li key={id} className="px-4 cursor-pointer capitalize font-medium text-secondaryBg hover:scale-105 hover:text-cyan-700 duration-200">
+                <li key={id} className="px-4 cursor-pointer capitalize font-medium text-secondary hover:scale-105 hover:text-cyan-700 duration-200">
                     <Link to={link} smooth duration={500}>
                         {link}
                     </Link>
@@ -46,11 +46,11 @@ const NavBar = () => {
 
         <div 
             onClick={() => setNav(!nav)}
-            className="cursor-pointer pr-4 z-10 text-secondaryBg md:hidden">
+            className="cursor-pointer pr-4 z-10 text-secondary md:hidden">
             {nav ? <FaTimes size={30} /> : <FaBars  size={30}/>}
         </div>
         {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primaryBg text-secondaryBg">
+            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-secondary">
                 {
                     links.map(({id, link}) =>(
                         <li 

@@ -2,16 +2,52 @@ import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
 import heroImage from '../img/image1.jpg'
 import { Link } from 'react-scroll'
+import FABs from './FABs'
+import { motion } from "framer-motion";
 
 const Home = () => {
+    const word = "Frontend";
+
+    const containerVariants = {
+        hidden: { opacity: 1 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+          },
+        },
+      };
+    
+      const letterVariants = {
+        hidden: { y: "-100vh", opacity: 0 },
+        visible: {
+          y: 0, 
+          opacity: 1,
+          transition: { type: "spring", stiffness: 100, damping: 10 },
+        },
+      };
+
   return (
     <div name="home"
-        className='h-full md:h-[101vh] w-full bg-primaryBg text-black md:px-16 lg:px-28 py-20 md:py-0'
+        className='h-full md:h-[101vh] w-full bg-primary text-black md:px-16 lg:px-28 py-20 md:py-0'
     >
         <div className="mx-auto flex flex-col items-center justify-between h-full lg:px-[30px] px-8 lg:flex-row pt-20">
-            <div className="flex flex-col">
-                <h2 className='text-6xl sm:text-7xl md:mt-20 lg:mt-0 font-bold text-secondaryBg'>
-                    I'm a <span className='text-cyan-700'>Frontend</span> <br /> Developer
+            <div className="">
+                <h2 className='text-6xl sm:text-[4.5rem] md:mt-20 lg:mt-0 font-bold text-secondary'>
+                    I'm a{" "}
+                    <motion.span
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                        className="inline-flex text-cyan-700"
+                    >
+                        {word.split("").map((letter, index) => (
+                        <motion.span key={index} variants={letterVariants}>
+                            {letter}
+                        </motion.span>
+                        ))}
+                    </motion.span>{""}
+                    Developer
                 </h2>
                 <p className="py-6 max-w-md md:max-w-lg text-lg font-bold text-cyan-700">
                     Got an idea? Let's bring it to Life!
@@ -27,13 +63,15 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-            <div className="md:py-8 lg:py-0 border border-cyan-700 rounded-full h-[420px] w-[420px] flex justify-center items-center">
+            <div className="rounded-full">
                 <img src={heroImage} alt="heroImage"
-                    className='w-[90%] rounded-full'
+                    className='w-full rounded-full border p-3 border-cyan-700'
                 />
             </div>
         </div>
-
+        <div className="md:hidden">
+            <FABs />
+        </div>
     </div>
   )
 }

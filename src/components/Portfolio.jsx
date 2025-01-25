@@ -88,11 +88,11 @@ const Portfolio = () => {
     ]
   return (
       <div name="portfolio" 
-      className="bg-primaryBg w-full text-secondaryBg h-full py-16 px-3 md:px-16 lg:px-28"
+      className="bg-primary w-full text-secondary h-full py-16 px-3 md:px-16 lg:px-28 overflow-x-hidden"
       >
         <div className="p-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className='pb-8'>
-                <p className="text-4xl font-bold inline border-b-4 border-[#7fa7b3]">Portfolio</p>
+                <p className="text-4xl font-bold inline border-b-4 border-secondary">Portfolio</p>
                 <p className="py-6 font-medium">Check out some of my work below</p>
             </div>
             <div className="flex justify-center items-center">
@@ -113,7 +113,7 @@ const Portfolio = () => {
                             }
                             }}
                             viewport={{ once: false }}
-                            className="p-4 rounded-lg shadow-md shadow-secondaryBg" key={id}
+                            className="p-4 rounded-lg shadow-md shadow-secondary" key={id}
                         >
                             <div className="flex items-center justify-between">
                                 <a 
@@ -135,9 +135,9 @@ const Portfolio = () => {
                                     <div className="hidden group-hover:block">
                                         <div className="bg-black opacity-80 w-full h-full absolute top-0 z-10 transition-all ease-in-out rounded-md">
                                             <div className="p-3 lg:p-7 text-left lg:mt-4 z-30">
-                                                <h3 className='font-semibold text-sm mb-1'>{title}</h3>
-                                                <p className="md:text-xs text-[10px] text-white">{about}</p>
-                                                <p className="md:text-xs text-[10px] pt-2 text-white"><strong>Technology: </strong>{technology}</p>
+                                                <h3 className='font-semibold text-sm mb-1 text-primary'>{title}</h3>
+                                                <p className="md:text-xs text-[10px] text-primary">{about}</p>
+                                                <p className="md:text-xs text-[10px] pt-2 text-primary"><strong>Technology: </strong>{technology}</p>
                                             </div>
                                         </div>
                                     </div>
