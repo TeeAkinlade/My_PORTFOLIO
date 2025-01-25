@@ -11,7 +11,7 @@ const Contact = () => {
     >
       <div className="flex flex-col p-6 mx-auto h-full pb-8">
         <div className="pb-8">
-          <p className="text-4xl px-2 font-bold inline border-b-4 border-slate-500 ">
+          <p className="text-4xl px-2 font-bold inline border-b-4 border-secondary">
             Contact
           </p>
           <p className="py-6 px-2 font-semibold">Get in touch with me</p>
