@@ -36,7 +36,7 @@ export default function FABs() {
     ]
   return (
     <>
-      <div className="fixed bottom-8 right-8 z-50">
+      <div className="fixed bottom-8 right-8 z-40">
         <div className="group flex flex-col-reverse gap-2">
           <button className="group relative z-50 inline-flex h-12 items-center justify-center gap-2 self-center whitespace-nowrap rounded bg-cyan-700 px-6 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-cyan-600 focus:bg-cyan-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-cyan-300 disabled:bg-cyan-300 disabled:shadow-none">
             <span className="relative transition duration-300 only:-mx-6 group-hover:rotate-45">

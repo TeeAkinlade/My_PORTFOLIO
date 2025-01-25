@@ -28,6 +28,7 @@ const NavBar = () => {
             link: 'contact'
         },
     ]
+    
   return (
     <div className='flex justify-between items-center w-full h-20 px-4 md:px-16 lg:px-28 text-black bg-primary shadow-sm
     fixed z-50'>
@@ -46,17 +47,20 @@ const NavBar = () => {
 
         <div 
             onClick={() => setNav(!nav)}
-            className="cursor-pointer pr-4 z-10 text-secondary md:hidden">
-            {nav ? <FaTimes size={30} /> : <FaBars  size={30}/>}
+            className="cursor-pointer pr-4 z-40 text-secondary md:hidden">
+            {nav ? <FaTimes size={16} /> : <FaBars  size={26}/>}
         </div>
         {nav && (
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-secondary">
+            <ul className="flex flex-col justify-center items-center absolute top-0 right-0 w-[95%] h-screen bg-primary text-secondary transition-all duration-300">
                 {
                     links.map(({id, link}) =>(
                         <li 
                             key={id}
-                            className="px-4 cursor-pointer capitalize py-6 text-4xl">
-                           <Link onClick={() => setNav(!nav)} to={link} smooth duration={500}>
+                            className="px-4 cursor-pointer capitalize py-6 text-xl">
+                            <Link
+                            className=''
+                                onClick={() => setNav(!nav)} to={link} smooth duration={500}
+                            >
                                 {link}
                             </Link>
                         </li>
