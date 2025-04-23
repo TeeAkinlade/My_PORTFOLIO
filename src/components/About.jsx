@@ -14,7 +14,7 @@ const About = () => {
                   <div className="pb-8">
                       <h1 className='text-4xl font-bold inline border-b-4 border-primary'>About</h1>
                       <p className=" text-base md:text-xl mt-20 px-6 md:px-12 leading-7 lg:px-16 font-light">
-                        My name is Taiye Akinlade, a passionate Frontend Developer with a keen eye for creating intuitive, visually appealing, and user-friendly digital experiences. I specialize in translating design concepts into responsive, efficient, and scalable code, ensuring that each project not only looks great but performs seamlessly. With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I continuously strive to stay at the forefront of web development trends and best practices. I believe in the power of clean, accessible code and a user-first approach to build meaningful digital solutions that make a difference.<br />
+                        I'm Taiye Akinlade, a passionate Frontend Developer with a keen eye for creating intuitive, visually appealing, and user-friendly digital experiences. I specialize in translating design concepts into responsive, efficient, and scalable code, ensuring that each project not only looks great but performs seamlessly. With expertise in HTML, CSS, JavaScript, and modern frameworks like React, I continuously strive to stay at the forefront of web development trends and best practices. I believe in the power of clean, accessible code and a user-first approach to build meaningful digital solutions that make a difference.<br />
 
                         <span className='pt-3'>Let’s bring ideas to life, pixel by pixel!</span>
                       </p>

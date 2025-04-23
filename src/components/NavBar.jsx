@@ -6,7 +6,7 @@ const NavBar = () => {
 
     const [nav, setNav] = useState(false)
 
-    const links =[
+    const links = [
         {
             id: 1,
             link: 'home'
@@ -30,14 +30,13 @@ const NavBar = () => {
     ]
     
   return (
-    <div className='flex justify-between items-center w-full h-20 px-4 md:px-16 lg:px-28 text-black bg-primary shadow-sm
-    fixed z-50'>
+    <div className='flex justify-between items-center w-full h-20 px-4 md:px-16 lg:px-28 text-black bg-primary shadow-sm fixed z-50'>
         <div>
             <h1 className='text-5xl font-signature ml-2 text-cyan-700'>Taiye</h1>
         </div>
         <ul className="hidden md:flex">
             {links.map(({ id, link}) => (
-                <li key={id} className="px-4 cursor-pointer capitalize font-medium text-secondary hover:scale-105 hover:text-cyan-700 duration-200">
+                <li key={id} className="px-4 cursor-pointer capitalize font-medium text-secondary hover:scale-105 hover:text-cyan-700 duration-200 hover:underline underline-offset-4">
                     <Link to={link} smooth duration={500}>
                         {link}
                     </Link>

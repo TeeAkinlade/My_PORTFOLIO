@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
-import heroImage from '../img/image1.jpg'
+import heroImage from '../img/Hero2.png'
 import { Link } from 'react-scroll'
 import FABs from './FABs'
 import { motion } from "framer-motion";
@@ -63,9 +63,9 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-            <div className="rounded-full">
+            <div className="rounded-full sm:z-10">
                 <img src={heroImage} alt="heroImage"
-                    className='w-full rounded-full border p-3 border-cyan-700'
+                    className='w-full lg:h-[453px] lg:w-[446px] rounded-full border p-3 border-cyan-700'
                 />
             </div>
         </div>
