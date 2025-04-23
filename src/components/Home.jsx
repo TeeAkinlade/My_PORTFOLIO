@@ -65,7 +65,7 @@ const Home = () => {
             </div>
             <div className="rounded-full sm:z-10">
                 <img src={heroImage} alt="heroImage"
-                    className='w-full lg:h-[453px] lg:w-[446px] rounded-full border p-3 border-cyan-700'
+                    className='w-full md:h-[453px] lg:h-full lg:w-[446px] rounded-full border p-3 border-cyan-700'
                 />
             </div>
         </div>
