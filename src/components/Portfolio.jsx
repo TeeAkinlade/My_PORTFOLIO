@@ -1,15 +1,45 @@
-import work from '../img/work.png'
+import work from '../img/lasmab.png'
 import work1 from '../img/work1.png'
 import work2 from '../img/work2.png'
-import work3 from '../img/seemless.png'
+import work3 from '../img/withJara.png'
 import work4 from '../img/work4.png'
 import work5 from '../img/work5.png'
 import work6 from '../img/sumz.png'
-import work7 from '../img/movie.png'
+import work7 from '../img/fespris.png'
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
+import { IoCodeSlash } from "react-icons/io5";
 
 const Portfolio = () => {
-    const portfolios = [ 
+    const portfolios = [
+        {
+            id: 3,
+            src: work3,
+            href: 'https://www.withjara.com/',
+            code: 'https://github.com/TeeAkinlade',
+            about: 'A custom CRM system to streamline customer interactions, sales tracking, and lead management. Developed dashboard analytics to track KPIs such as customer engagement, conversion rates, vendors, delivery riders and sales performance.',
+            title: 'WithJara',
+            technology: " NextJs, Redux, Tailwind, Api Integration"
+        },
+        {
+            id: 6,
+            src: work,
+            href: 'https://lasmab.org/',
+            code: 'https://github.com/TeeAkinlade',
+            title: 'LASMAB',
+            about: 'A comprehensive platform designed to streamline operations for teachers, students, administrators, and parents in Anglican schools across Lagos State',
+            technology: "Raect, Redux, Api"
+        },
+        {
+            id: 2,
+            src: work2,
+            href: 'https://subscribe.salestrack.app/',
+            code: 'https://github.com/solyakin/sales_track_website',
+            title: 'Sale Track',
+            about: 'Sale Track is a multi-store Point of Sales(POS) and e-commerce website. Where user can Upload products, inventory control, expenses, manage sales, suppliers and customers. Generate extensive real time reporting and Analytics',
+            technology: "React, Redux, Chakra UI, Api, formik"
+
+        },
         {
             id: 1,
             src: work4,
@@ -19,59 +49,30 @@ const Portfolio = () => {
             about: 'A user-friendly comprehensive Real Estate Management System designed to streamline property listings.',
             technology: "React, Tailwind, Firebase, moment-timezone",
         },
-        
-        {
-            id: 2,
-            src: work2,
-            href: 'https://sales-track-website.vercel.app/',
-            code: 'https://github.com/solyakin/sales_track_website',
-            title: 'Sale Track',
-            about: 'E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships',
-            technology: "React, Redux, Chakra UI, Formik"
-
-        },
-        {
-            id: 3,
-            src: work3,
-            href: 'https://seemless-pos-assessment.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/SeemlessPos_Assessment',
-            about: 'A Clothing E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships.',
-            title: 'E-Store',
-            technology: " React, Redux, Tailwind, Rapid API"
-        },
         {
             id: 4,
             src: work6,
             href: 'https://sumz-api-summerizer.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/sumz_Api_summerizer',
+            code: 'https://github.com/TeeAkinlade',
             title: 'Sumz API summerizer',
             about: 'The project aimed to enhance content consumption efficiency for users by providing quick and accurate summaries of extensive textual data.',
             technology: " React, Redux, Tailwind, Rapid API",
         },
         {
-            id: 6,
-            src: work,
-            href: 'https://r-store.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/E-commerce-app',
-            title: 'R-store',
-            about: 'A Clothing E-Commerce platform aimed at enhancing the online shopping experience and streamlining the management of products, orders, and customer relationships.',
-            technology: "HTML, CSS, JavaScript, Api"
-        },
-        {
             id: 9,
             src: work7,
-            href: 'https://movie-box-amber.vercel.app/',
+            href: 'https://fes-pris-admin-web-portal.vercel.app/overview',
             code: 'https://github.com/TeeAkinlade/Movie_box',
-            title: 'Movie Box',
-            about: 'A movie website that show the latest movies ans details about the movie',
-            technology: "NextJs, Tailwind, Dummy Api"
+            title: 'Fespris',
+            about: 'A digital solution designed to streamline online food ordering, payment processing, and delivery management for restaurants and customers.',
+            technology: "React, Tailwind, Redux, ApI, Google Maps"
         },
         {
             id: 7,
             src: work1,
             href: 'https://reality-clone.vercel.app/',
             code: 'https://github.com/TeeAkinlade/Reality_clone',
-            title: 'Reality Clone',
+            title: 'Reality',
             about:'A responsive UI interafce that shows the interior of properties for sales',
             technology: "React, Tailwind, react-modal-video"
 
@@ -81,7 +82,7 @@ const Portfolio = () => {
             src: work5,
             href: 'https://boldo-website.vercel.app/',
             code: 'https://github.com/TeeAkinlade/Boldo_website',
-            title: 'Blodo clone',
+            title: 'Blodo',
             about: 'A Responsive Boldo clone website with amazing UI',
             technology: "React, Tailwind"
         },
@@ -119,14 +120,15 @@ const Portfolio = () => {
                                 <a 
                                     href={href}
                                     target='_blank'
-                                    className='w-1/2 pb-2 hover:text-cyan-700 text-sm'>
-                                        Demo
+                                    className='w-1/2 pb-2 text-cyan-700 text-base'>
+                                        <FiExternalLink />
                                 </a>
+                                <p className="text-sm whitespace-nowrap font-medium">{title}</p>
                                 <a 
                                     href={code}
                                     target='_blank'
-                                    className='w-1/2 pb-2 hover:text-cyan-700 text-end text-sm'>
-                                        Code
+                                    className='w-1/2 pb-2 text-cyan-700 text-base flex items-end justify-end'>
+                                        <IoCodeSlash />
                                 </a>
                                 
                             </div>
