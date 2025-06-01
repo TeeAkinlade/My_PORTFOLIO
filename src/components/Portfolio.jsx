@@ -62,7 +62,7 @@ const Portfolio = () => {
             id: 9,
             src: work7,
             href: 'https://fes-pris-admin-web-portal.vercel.app/overview',
-            code: 'https://github.com/TeeAkinlade/Movie_box',
+            code: 'https://github.com/TeeAkinlade',
             title: 'Fespris',
             about: 'A digital solution designed to streamline online food ordering, payment processing, and delivery management for restaurants and customers.',
             technology: "React, Tailwind, Redux, ApI, Google Maps"
