@@ -61,8 +61,8 @@ const Portfolio = () => {
         {
             id: 9,
             src: work7,
-            href: 'https://fes-pris-admin-web-portal.vercel.app/overview',
-            code: 'https://github.com/TeeAkinlade/Movie_box',
+            href: '',
+            code: 'https://github.com/TeeAkinlade',
             title: 'Fespris',
             about: 'A digital solution designed to streamline online food ordering, payment processing, and delivery management for restaurants and customers.',
             technology: "React, Tailwind, Redux, ApI, Google Maps"
@@ -117,20 +117,15 @@ const Portfolio = () => {
                             className="p-4 rounded-lg shadow-md shadow-secondary" key={id}
                         >
                             <div className="flex items-center justify-between">
-                                <a 
-                                    href={href}
-                                    target='_blank'
-                                    className='w-1/2 pb-2 text-cyan-700 text-base'>
-                                        <FiExternalLink />
-                                </a>
                                 <p className="text-sm whitespace-nowrap font-medium">{title}</p>
-                                <a 
-                                    href={code}
-                                    target='_blank'
-                                    className='w-1/2 pb-2 text-cyan-700 text-base flex items-end justify-end'>
-                                        <IoCodeSlash />
-                                </a>
-                                
+                                <div className="grid place-items-end pr-3">
+                                    <a 
+                                        href={href}
+                                        target='_blank'
+                                        className='w-1/2 pb-2 text-cyan-700 text-base'>
+                                            <FiExternalLink />
+                                    </a>
+                                </div>
                             </div>
                                 <div className="relative group">
                                     <img src={src} alt="project-image" className='rounded-md ease-in-out duration-200 w-full hover:shadow-cyan-500 hover:shadow-sm' />
