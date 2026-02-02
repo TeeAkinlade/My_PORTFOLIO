@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
-import heroImage from '../img/Hero2.png'
+import heroImage from '../img/Me.jpeg'
 import { Link } from 'react-scroll'
 import FABs from './FABs'
 import { motion } from "framer-motion";
