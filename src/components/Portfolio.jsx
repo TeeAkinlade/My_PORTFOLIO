@@ -3,12 +3,12 @@ import work1 from '../img/work1.png'
 import work2 from '../img/work2.png'
 import work3 from '../img/withJara.png'
 import work4 from '../img/work4.png'
-import work5 from '../img/work5.png'
+import work5 from '../img/image.png'
 import work6 from '../img/sumz.png'
 import work7 from '../img/fespris.png'
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
-import { IoCodeSlash } from "react-icons/io5";
+
 
 const Portfolio = () => {
     const portfolios = [
@@ -16,7 +16,7 @@ const Portfolio = () => {
             id: 3,
             src: work3,
             href: 'https://www.withjara.com/',
-            code: 'https://github.com/TeeAkinlade',
+            code: '',
             about: 'A custom CRM system to streamline customer interactions, sales tracking, and lead management. Developed dashboard analytics to track KPIs such as customer engagement, conversion rates, vendors, delivery riders and sales performance.',
             title: 'WithJara',
             technology: " NextJs, Redux, Tailwind, Api Integration"
@@ -25,7 +25,7 @@ const Portfolio = () => {
             id: 6,
             src: work,
             href: 'https://lasmab.org/',
-            code: 'https://github.com/TeeAkinlade',
+            code: '',
             title: 'LASMAB',
             about: 'A comprehensive platform designed to streamline operations for teachers, students, administrators, and parents in Anglican schools across Lagos State',
             technology: "Raect, Redux, Api"
@@ -34,17 +34,26 @@ const Portfolio = () => {
             id: 2,
             src: work2,
             href: 'https://subscribe.salestrack.app/',
-            code: 'https://github.com/solyakin/sales_track_website',
+            code: '',
             title: 'Sale Track',
             about: 'Sale Track is a multi-store Point of Sales(POS) and e-commerce website. Where user can Upload products, inventory control, expenses, manage sales, suppliers and customers. Generate extensive real time reporting and Analytics',
             technology: "React, Redux, Chakra UI, Api, formik"
 
         },
         {
+            id: 134,
+            src: work5,
+            href: 'https://www.dartechexchange.com/',
+            code: '',
+            title: 'Dartech Exchange',
+            about: 'Turn gift cards or crypto into cash — fast. Competitive rates, missing codes, and crypto trades handled with care.',
+            technology: "React, Tailwind, Api",
+        },
+        {
             id: 1,
             src: work4,
             href: 'https://realtor-clone-react-ruby.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/Realtor-clone-react',
+            code: '',
             title: 'Realtor web Application',
             about: 'A user-friendly comprehensive Real Estate Management System designed to streamline property listings.',
             technology: "React, Tailwind, Firebase, moment-timezone",
@@ -53,7 +62,7 @@ const Portfolio = () => {
             id: 4,
             src: work6,
             href: 'https://sumz-api-summerizer.vercel.app/',
-            code: 'https://github.com/TeeAkinlade',
+            code: '',
             title: 'Sumz API summerizer',
             about: 'The project aimed to enhance content consumption efficiency for users by providing quick and accurate summaries of extensive textual data.',
             technology: " React, Redux, Tailwind, Rapid API",
@@ -61,8 +70,8 @@ const Portfolio = () => {
         {
             id: 9,
             src: work7,
-            href: '',
-            code: 'https://github.com/TeeAkinlade',
+            href: 'https://adminportal.fespris-kitchen.com/',
+            code: '',
             title: 'Fespris',
             about: 'A digital solution designed to streamline online food ordering, payment processing, and delivery management for restaurants and customers.',
             technology: "React, Tailwind, Redux, ApI, Google Maps"
@@ -71,20 +80,11 @@ const Portfolio = () => {
             id: 7,
             src: work1,
             href: 'https://reality-clone.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/Reality_clone',
+            code: '',
             title: 'Reality',
             about:'A responsive UI interafce that shows the interior of properties for sales',
             technology: "React, Tailwind, react-modal-video"
 
-        },
-        {
-            id: 8,
-            src: work5,
-            href: 'https://boldo-website.vercel.app/',
-            code: 'https://github.com/TeeAkinlade/Boldo_website',
-            title: 'Blodo',
-            about: 'A Responsive Boldo clone website with amazing UI',
-            technology: "React, Tailwind"
         },
     ]
   return (
@@ -146,7 +146,7 @@ const Portfolio = () => {
         </div>
         <div className="flex place-items-center justify-center hover:translate-y-2 duration-500">
             <a  
-                href='https://github.com/TeeAkinlade'
+                href=''
                 target='_blank'
                 className='bg-gradient-to-r from-cyan-700 to-cyan-500 text-white px-4 py-1.5 mt-10 rounded-md shadow-lg'>See More</a> 
 
