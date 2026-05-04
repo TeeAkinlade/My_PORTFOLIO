@@ -43,6 +43,7 @@ const SocialLink = () => {
             style: 'rounded-br-md',
             download: true,
         },
+        
     ]
 
   return (
